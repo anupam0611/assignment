@@ -8,5 +8,5 @@ FROM tomcat
 RUN rm -rf /usr/local/tomcat/webapps/* 
 COPY target/demo-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/
 
-EXPOSE 9090
+EXPOSE 8080
 CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
